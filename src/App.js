@@ -1,16 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import PwaInstallPopupIOS from 'react-pwa-install-ios';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <BrowserRouter basename='/my-pwa'>
       {<div className="App">
+
         <header className="App-header">
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
           <p>
-            Prueba PWA React UPDATE
+            Prueba PWA React UPDATE 4
           </p>
         </header>
         <PwaInstallPopupIOS>
